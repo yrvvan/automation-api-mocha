@@ -1,0 +1,29 @@
+{
+    "post": {
+        "field": "post",
+        "message": "must exist"
+    },
+    "post_id": {
+        "field": "post_id",
+        "message": "is not a number"
+    },
+    "name": {
+        "field": "name",
+        "message": "can't be blank"
+    },
+    "email": {
+        "field": "email",
+        "message": [
+            "can't be blank",
+            "is invalid"
+        ]
+    },
+    "body": {
+        "field": "body",
+        "message": "can't be blank"
+    },
+    "auth": {
+        "invalidToken": "Invalid token",
+        "emptyAuth": "Authentication failed"
+    }
+}

@@ -1,0 +1,88 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "required": [
+        "meta",
+        "data"
+    ],
+    "properties": {
+        "meta": {
+            "type": "object",
+            "required": [
+                "pagination"
+            ],
+            "properties": {
+                "pagination": {
+                    "type": "object",
+                    "required": [
+                        "total",
+                        "pages",
+                        "page",
+                        "limit",
+                        "links"
+                    ],
+                    "properties": {
+                        "total": {
+                            "type": "integer"
+                        },
+                        "pages": {
+                            "type": "integer"
+                        },
+                        "page": {
+                            "type": "integer"
+                        },
+                        "limit": {
+                            "type": "integer"
+                        },
+                        "links": {
+                            "type": "object",
+                            "required": [
+                                "previous",
+                                "current",
+                                "next"
+                            ],
+                            "properties": {
+                                "previous": {
+                                    "type": ["string","null"]
+                                },
+                                "current": {
+                                    "type": ["string","null"]
+                                },
+                                "next": {
+                                    "type": ["string","null"]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "data": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "id",
+                    "user_id",
+                    "title",
+                    "body"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "user_id": {
+                        "type": "integer"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "body": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
