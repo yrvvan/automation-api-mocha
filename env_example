@@ -1,2 +1,5 @@
-BASE_URL=https://gorest.co.in
-BEARER=
+URL_GOREST = 'https://gorest.co.in'
+PROXY_STATUS = ''
+PROXY_PORT = ''
+QASE_TOKEN = ''
+TOKEN_GOREST = ''
